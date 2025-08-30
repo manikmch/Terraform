@@ -19,3 +19,9 @@ variable "image" {
   type        = string
   description = "Docker image to deploy"
 }
+
+variable "google_credentials" {
+  type      = string
+  sensitive = true
+}
+

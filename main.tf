@@ -1,7 +1,7 @@
 provider "google" {
-  credentials = file("C:/Users/hellb/Desktop/Terraform files/terraform-sa.json")
-  project = var.project_id
-  region  = var.region
+  credentials = var.google_credentials
+  project     = var.project_id
+  region      = var.region
 }
 
 resource "google_cloud_run_service" "my_service" {
